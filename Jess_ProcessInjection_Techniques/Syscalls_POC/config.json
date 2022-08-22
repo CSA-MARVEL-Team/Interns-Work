@@ -1,0 +1,18 @@
+{
+    "session_properties": {
+        "session_name": "Sealighter-Trace",
+        "output_format": "stdout"
+    },
+    "user_traces": [
+        {
+            "trace_name": "ProcTrace01",
+            "provider_name": "Microsoft-Windows-Kernel-File",
+            "filters": {
+                "all_of": {
+                    "event_id_is": [ 12, 16 ],
+                    "process_name_contains": "example.exe"
+                }
+            }
+        }
+    ]
+}

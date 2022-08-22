@@ -61,7 +61,7 @@ int main()
         _NtQueueApcThread NtQueueApcThread = (_NtQueueApcThread)GetProcAddress(ntdll, "NtQueueApcThread");
         if (NtQueueApcThread)
         {
-            int pid = findProcess(L"a.exe");
+            int pid = findProcess(L"SleepHelloWorld.exe");
 
             if (pid)
             {
